@@ -79,31 +79,29 @@ Anaconda 是一个“Python工具包”
  
   **（1） pycharm上anaconda的使用方法**
   
-     在```New Project```
+     A.在```New Project```中找到：```Python Interpreter```
 
-     找到：```Python Interpreter```
+     B.选择：```Conda Environment```
 
-     选择：```Conda Environment```
+     C.选：```Existing environment```
 
-     选：```Existing environment```
+     D.找到路径，比如：```anaconda/envs/myenv/python.exe```
 
-     找到路径，比如：```anaconda/envs/myenv/python.exe```
-
-     创建项目
+     E.创建项目
 
   **（2）vs code上anaconda的使用方法**
   
-     **安装 Python 插件**
+     **A.安装 Python 插件**
 
     - 打开 VS Code → ```扩展（Extensions）```
 
     - 安装：```Python extension for Visual Studio Code```
 
-     **打开项目文件夹**
+     **B.打开项目文件夹**
 
     - 打开你的项目文件夹：```VS Code → File → Open Folder```
  
-     **选择anaconda环境**
+     **C.选择anaconda环境**
   
     - 按```Ctrl + Shift + P```
 
@@ -111,7 +109,7 @@ Anaconda 是一个“Python工具包”
  
     - 选择你创建的环境，例如：```自己起的环境名 (conda)```
  
-     **测试是否成功**
+     **D.测试是否成功**
 
     新建 ```test.py```：
     ```python
@@ -124,7 +122,7 @@ Anaconda 是一个“Python工具包”
         
     说明成功
 
-    **终端同步**
+    **E.终端同步**
 
   在 VS Code 终端输入：```conda activate 自己起的环境名```
 

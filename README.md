@@ -1,5 +1,5 @@
 # seminar2_anaconda_explanation
-1.什么是anaconda
+**1.什么是anaconda**
 
 ---
 
@@ -17,7 +17,7 @@ Anaconda 是一个“Python工具包”
 
 ---
 
-2.如何使用Anaconda
+**2.如何使用Anaconda**
 
 ---
 - 法政大学的貸与PC已经安装了anaconda以及anaconda navigator（有图像界面的anaconda的操作台）但是没有配置环境变量，需要先做一定的设定
@@ -70,18 +70,61 @@ Anaconda 是一个“Python工具包”
     ```bash
     conda install numpy=2.4.0
     ```
-    
-        
+
+---
+**3.在ide上使用anaconda**
+
+---
 - 大家使用什么ide？pycharm？ visual studio code？
  
-  （1） pycharm上anaconda的使用方法
+  **（1） pycharm上anaconda的使用方法**
+  
+     在```New Project```
 
-  （2）vs code上anaconda的使用方法
+     找到：```Python Interpreter```
+
+     选择：```Conda Environment```
+
+     选：```Existing environment```
+
+     找到路径，比如：```anaconda/envs/myenv/python.exe```
+
+     创建项目
+
+  **（2）vs code上anaconda的使用方法**
   
      **安装 Python 插件**
 
-    - 打开 VS Code → 扩展（Extensions）
+    - 打开 VS Code → ```扩展（Extensions）```
 
-    - 安装：Python extension for Visual Studio Code
+    - 安装：```Python extension for Visual Studio Code```
+
+     **打开项目文件夹**
+
+    - 打开你的项目文件夹：```VS Code → File → Open Folder```
  
+     **选择anaconda环境**
+  
+    - 按```Ctrl + Shift + P```
+
+    - 输入并点击：```Python: Select Interpreter```
+ 
+    - 选择你创建的环境，例如：```自己起的环境名 (conda)```
+ 
+     **测试是否成功**
+
+    新建 ```test.py```：
+    ```python
+    import sys
+    print(sys.executable)
+    ```
+    如果路径里有：
+        
+    ```anaconda/envs/自己起的环境名```
+        
+    说明成功
+
+    **终端同步**
+
+  在 VS Code 终端输入：```conda activate 自己起的环境名```
 

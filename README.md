@@ -55,7 +55,7 @@ Anaconda 是一个“Python工具包”
     （3）退出虚拟环境
     
     ```bash
-    conda deactivate 自己起的环境名
+    conda deactivate
     ```
     （4）删除虚拟环境
  

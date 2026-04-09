@@ -1,12 +1,87 @@
 # seminar2_anaconda_explanation
-什么是anaconda
+1.什么是anaconda
 
-***
+---
 
 Anaconda 是一个“Python工具包”
 
 
 
-* 自带 Python 和常用库（不用自己一个个装）
+* 自带 Python 和常用库
 
-* 用 conda 管理环境（避免冲突）
+* 用 conda 管理环境
+
+  >可以创建相互隔离的environment，在不同的环境下可以安装不同版本的python，以及package，
+
+  >在需要应对每个几个程序需要不同版本的python或者package的时候很有用
+
+---
+
+2.如何使用Anaconda
+
+---
+- 法政大学的貸与PC已经安装了anaconda以及anaconda navigator（有图像界面的anaconda的操作台）但是没有配置环境变量，需要先做一定的设定
+  - 添加anaconda的script到环境变量中
+ 
+  - anaconda的命令行操作
+
+    （1）cmd命令窗口创建虚拟环境
+    
+    ```bash
+    win+R
+    ```
+    
+    ```bash
+    cmd
+    ```
+    
+    ```bash
+    conda create -n 自己起的环境名 python=需要的版本号
+    ```
+    
+    example:
+    ```bash
+    conda create -n myenv python=3.10
+    ```
+    >不加具体的python版本号就会下载最新版本的python
+    
+    >也可以通过anaconda navigator创建虚拟环境
+ 
+    （2）激活虚拟环境
+    
+    ```bash
+    conda activate 自己起的环境名
+    ```
+    （3）退出虚拟环境
+    
+    ```bash
+    conda deactivate 自己起的环境名
+    ```
+    （4）删除虚拟环境
+ 
+    ```bash
+    conda remove -n 自己起的环境名 --all
+    ```
+    
+    （5）python库函数的安装命令
+      >安装package的命令行操作，也可以在ide里安装
+      >使用命令行安装注意要先激活虚拟环境
+      
+    ```bash
+    conda install numpy=2.4.0
+    ```
+    
+        
+- 大家使用什么ide？pycharm？ visual studio code？
+ 
+  （1） pycharm上anaconda的使用方法
+
+  （2）vs code上anaconda的使用方法
+  
+     **安装 Python 插件**
+
+    - 打开 VS Code → 扩展（Extensions）
+
+    - 安装：Python extension for Visual Studio Code
+ 
+
